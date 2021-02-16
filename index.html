@@ -8,6 +8,7 @@
     </head>
 
 <!--Logo et intro-->
+
     <body>
         <div id="bloc_page">
             <header>
@@ -31,6 +32,7 @@
 
 
 <!--Barre de recherche-->
+
         <div id="barre_recherche">
             <form method="POST" action="traitement.php">
                 <i class="fas fa-map-marker-alt"></i>
@@ -41,7 +43,8 @@
             </form>
         </div>    
 
-<!--Filtres recherches-->
+<!--Filtres de recherches-->
+
         <div id="filtres">
             <h3>Filtres</h3>
         
@@ -54,55 +57,124 @@
         </div>
 
 <!--Hébergements-->
+
         <section id="hebergements">
             <h2>Hebergements à Marseille</h2>
-            <figure id="auberge_cannebière">
-                <a href="#"><img id="imgaubergecannebière" src="images/hebergements/3_medium/auberge_la_cannebière_medium.jpg" alt="Chambre d'auberge"></a>
-                <figcaption>Auberge la Cannebière <br>Nuit à partir de <strong>25€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="hotel_du_port">
-                <a href="#"><img id="imghotelduport" src="images/hebergements/3_medium/hotel_du_port_medium.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel du port <br>Nuit à partir de <strong>55€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="hotel_les_mouettes">
-                <a href="#"><img id="imghotellesmouettes" src="images/hebergements/3_medium/hotel_les_mouettes_medium.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel Les mouettes <br>Nuit à partir de <strong>76€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="hotel_de_la_mer">
-                <a href="#"><img id="imghoteldelamer" src="images/hebergements/3_medium/hotel_de_la_mer_medium.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel de la mer <br>Nuit à partir de <strong>46€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="auberge_le_panier">
-                <a href="#"><img id="imgaubergelepanier" src="images/hebergements/3_medium/auberge_le_panier_medium.jpg" alt="Chambre Auberge"></a>
-                <figcaption>Auberge le panier <br>Nuit à partir de <strong>23€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="hotel_chez_amina">
-                <a href="#"><img id="imghotelchezamina" src="images/hebergements/3_medium/hotel_chez_amina_medium.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel chez Amina <br>Nuit à partir de <strong>96€</strong><br>★★★★★</figcaption>
-            </figure>
-            
+            <a href="#">
+                <figure class="cannebiere_hostel">
+                    <img id="img_cannebiere_hostel" src="images/hebergements/3_medium/cannebiere_hostel_medium.jpg" alt="Chambre d'auberge avec lit surperposé">
+                    <figcaption>Auberge la Cannebière <br>Nuit à partir de <span class="price">25€</span><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figcaption>
+                </figure>
+            </a>
+            <a href="#">  
+                <figure class="harbor_hotel">
+                    <img id="img_harbor_hotel" src="images/hebergements/3_medium/harbor_hotel_medium.jpg" alt="Chambre d'hôtel avec deux lis simples et une grande fenêtre">
+                    <figcaption>Hôtel du port <br>Nuit à partir de <span class="note">55€</span><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figcaption>
+                </figure>
+            </a>
+            <a href="#">    
+                <figure class="seagulls_hotel">
+                    <img id="img_seagulls_hotel" src="images/hebergements/3_medium/seagulls_hotel_medium.jpg" alt="Chambre d'hôtel composée de deux lits simple et d'un dressing">
+                    <figcaption>Hôtel Les mouettes <br>Nuit à partir de <span class="price">76€</span><br>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">    
+                <figure class="sea_hotel">
+                    <img id="img_sea_hotel" src="images/hebergements/3_medium/sea_hotel_medium.jpg" alt="Chambre d'hôtel avec lit double, tables de chevet et sofa">
+                    <figcaption>Hôtel de la mer <br>Nuit à partir de <span class="price">46€</span><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figcaption>
+                </figure>
+            </a>
+            <a href="#">    
+                <figure class="basket_hostel">
+                    <img id="img_basket_hotel" src="images/hebergements/3_medium/basket_hotel_medium.jpg" alt="Dortoir rustique avec lit superposés">
+                    <figcaption>Auberge le panier <br>Nuit à partir de <span class="price">23€</span><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="aminas_hotel">
+                    <a href="#"><img id="img_aminas_hotel" src="images/hebergements/3_medium/aminas_hotel_medium.jpg" alt="Chambre d'hôtel composée de deux lit doubles et d'un bureau">
+                    <figcaption>Hôtel chez Amina <br>Nuit à partir de <span class="price">96€</span><br><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></figcaption>
+                </figure>
+            </a>    
             <h3><a href="#">Afficher plus</a></h3>
         </section>
 
 <!--Hébergements les plus populaires-->
+
         <aside id="les_plus_populaires">
             <h2>Les plus populaires</h2>
             <div id="icon_populaires">
                 <i class="fas fa-chart-line"></i>
             </div>
-            <figure id="hotel_soleil_du_matin">
-                <a href="#"><img id="imghotelsoleildumatin" src="images/hebergements/4_small/soleil_du_matin_small.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel Le soleil du matin <br>Nuit à partir de <strong>128€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="au_coeur_de_leau">
-                <a href="#"><img id="imgaucoeurdeleau" src="images/hebergements/4_small/au_coeur_de_leau_small.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Au coeur de l'eau Chambres d'hôtes <br>Nuit à partir de <strong>71€</strong><br>★★★★★</figcaption>
-            </figure>
-            <figure id="hotel_bleu_et_blanc">
-                <a href="#"><img id="imgtoutbleuetblanc" src="images/hebergements/4_small/soleil_du_matin_small.jpg" alt="Chambre d'hôtel"></a>
-                <figcaption>Hôtel Tout bleu et Blanc <br>Nuit à partir de <strong>68€</strong><br>★★★★★</figcaption>
-            </figure>
+            <a href="#">
+                <figure class="sunrise_hotel">
+                    <img id="img_sunrise_hotel" src="images/hebergements/4_small/sunrise_hotel_small.jpg" alt="Chambre d'hôtel avec lit double et ambiance feutrée">
+                    <figcaption>Hôtel Le soleil du matin <br>Nuit à partir de <span class="price">128€</span><br>★★★★★</figcaption>
+                </figure>    
+            </a>            
+            <a href="#"> 
+                <figure class="au_coeur_de_leau">
+                    <img id="imgaucoeurdeleau" src="images/hebergements/4_small/au_coeur_de_leau_small.jpg" alt="Chambre d'hôtel spacieuse et design avec lit double">
+                    <figcaption>Au coeur de l'eau Chambres d'hôtes <br>Nuit à partir de <span class="price">71€</span><br>★★★★★</figcaption>
+                </figure>
+            </a>
+            <a href="#">    
+                <figure class="blue_and_white_hotel">
+                    <img id="img_blue_and_white_hotel" src="images/hebergements/4_small/blue_and_white_hotel_small.jpg" alt="Chambre d'hôtel avec lit double">
+                    <figcaption>Hôtel Tout bleu et Blanc <br>Nuit à partir de <span class="price">68€</span><br>★★★★★</figcaption>
+                </figure>
+            </a>    
         </aside>
+
+ <!--Activités-->    
+
+        <section id="activités">
+            <h2>Activités à Marseille</h2>
+            <a href="#">
+                <figure class="old_harbor">
+                    <img id="img_old_harbor" src="images/activites/3_medium/old_harbor_medium.jpg" alt="Photo du vieux port de Marseille et beateaux au premier plan">
+                    <figcaption>Vieux Port</figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="pomegues_fort">
+                    <img id="img_pomeges_fort" src="images/activites/3_medium/pomegues_fort_medium.jpg" alt="Photo du Fort de Pomègues">
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="frioul_islands">
+                    <img id="img_frioul_island" src="images/activites/3_medium/frioul_islands_medium.jpg" alt="Photo des Iles du Frioul">
+                    <figcaption>Iles du Frioul</figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="calanques_national_park">
+                    <img id="img_calanques_national_park" src="images/activites/3_medium/calanques_national_park_medium.jpg" alt="Photo ensoleillées du Parc National des Calanques de Marseille">
+                    <figcaption>Parc National des Calanques</figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="notre_dame_de_la_garde">
+                    <img id="img_notre_dame_de_la_garde" src="images/activites/3_medium/notre_dame_de_la_garde_medium.jpg" alt="Photo de la Basilique Notre-Dame-de-la-Garde surplombant la ville de Marseille">*
+                    <figcaption>Notre-Dame-de-la-Garde</figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="longchamp_park">
+                    <img id="img_longchamp_park" src="images/activites/3_medium/longchamp_park_medium.jpg" alt="Photo du Parc Longchamp">
+                    <figcaption>Parc Longchamp</figcaption>
+                </figure>
+            </a>
+        </section>
+
+ <!--Pied de page-->
+ 
+        <footer>
+
+
+        </footer>
 
         </div>
 
