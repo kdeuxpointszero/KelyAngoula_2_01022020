@@ -1,36 +1,32 @@
 /*Définition des polices personnalisées*/
 
-@font-face
-{
-    font-family: 'Raleway';
-    src: url(fonts/Raleway-VariableFont_wght.ttf);       
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 /*Style principaux de la page*/
 
-body {
-
-    font-family: Raleway, sans-serif;
-}
-
 #bloc_page {
 
+    width: 1450px;
+    margin: auto;
 
 }
 
-h1, h2, h3 {
+body {
 
-    font-style: bold;
+    font-family: Raleway, sans-serif; 
+
 }
 
-/*Header*/
+a {
 
-#titre_principal {
+    color: inherit;
+    text-decoration: none;
 
-    display: flex;
-    justify-content: space-between;
+}
+ 
+h1, h2 {
+
+    font-size: 24px;
 
 }
 
@@ -38,49 +34,216 @@ h1, h2, h3 {
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
+
+}
+#logo img {
+
+    width: 100px;
+    height: 45px;
+    margin-bottom: 30px;
 
 }
 
-#logo img {
+/*Navigation*/
 
-    width: 120px;
-    height: 60px;
+#header {
+
+    display: flex;
+    justify-content: space-between;
+
 }
 
 nav ul {
 
-    display: flex;
-    justify-content: flex-end;
     list-style-type: none;
-    
+    display: flex;
 
 }
 
 nav li {
 
-    margin-right: 60px;
+    margin-right: 50px;
 
-}
-
-nav a {
-
-    text-decoration: none;
-    color: #333;
 }
 
 nav a:hover {
 
     color: #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 22px;
-
-}
-
-#inscription {
     
-    color: #0065FC;
+
 }
 
+
+.singup {
+
+    font-weight: bold;
+    color: #0065FC;
+    text-decoration: none;
+
+}
+
+/*Barre de recherche*/
+
+
+.search_form {
+
+   display: inline-flex;
+   max-width: 100%;
+   overflow: auto;
+
+}
+
+.search_icon {
+
+    background-color: #F2F2F2;
+    padding: 16px 20px;
+    border-radius: 16px 0 0 16px;
+    text-align: center;
+
+}
+
+.search_form_button {
+
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    padding: 0 24px;
+    font-family: "Raleway", "Sans serif";
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+input {
+
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 24px;
+    box-sizing: border-box;
+    width: 220px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Raleway, "Sans serif";
+}
+
+
+/*Filtres de recherches*/ 
+
+#search_filters {
+
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+
+.search_filters_title {
+
+    display: flex;
+    align-items: center;
+    margin: 0 32px 16px 0;
+
+}
+
+.search_filter {
+
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    border: 2px solid #d9d9d9;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.search_filter:hover {
+
+    background-color:#0065FC;
+    color: white;
+    transition-duration: 500ms;
+    
+  }
+
+  .search_filter_icon {
+
+    color: #0065FC;  
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    min-height: 56px;
+    min-width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+  }
+
+/*Information*/
+
+#information {
+
+    display: flex;
+    align-items: center;
+
+  }
+.info_icon {
+
+  color: #0065FC;  
+  height: 32px;
+  width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  
+}
+
+/*Hostings*/
+
+#hosting, #most_popular {
+
+  background-color: #F2F2F2;
+  border-radius: 24px;
+  padding: 32px;
+
+}
+
+.hosting {
+    display: grid;
+    column-gap: 32px;
+    grid-template-columns: 6fr 3fr;
+  }
+
+.hosting_choice {
+    background-color: white;
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+/*Most Popular hostings*/
+
+
+
+
+  
+  
 
 
