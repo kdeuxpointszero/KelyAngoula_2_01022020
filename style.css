@@ -58,6 +58,7 @@ nav ul {
 
     list-style-type: none;
     display: flex;
+    
 
 }
 
@@ -70,12 +71,14 @@ nav li {
 nav a:hover {
 
     color: #0065FC;
+    border-top: #0065FC solid 3px;
+    padding-top: 22px;
     
 
 }
 
 
-.singup {
+li .sing_up {
 
     font-weight: bold;
     color: #0065FC;
@@ -165,6 +168,12 @@ input {
 
 }
 
+.search_filter_text {
+
+    padding-left: 18px;
+}
+
+
 .search_filter:hover {
 
     background-color:#0065FC;
@@ -225,15 +234,13 @@ input {
 
 .hosting {
 
-    display: flex;
-    flex-wrap: wrap;
+
+
 
 }
 
 .hosting_block {
-
-    display: flex;
-    align-items: flex-start;
+    
 
 }
 
@@ -247,6 +254,12 @@ input {
   cursor: pointer;
   box-sizing: border-box;
   height: 100%;
+
+}
+
+.hosting_card:hover {
+
+    transform: scale(1.02);
 
 }
 
@@ -266,39 +279,48 @@ input {
 
 }
 
+.hosting_card_choice_title {
+
+    font-weight: bold;
+}
+
+.hosting_card_choice_rate {
+
+    margin: 0 0.75rem 0.25rem 0.75rem;
+
+}
+
+.price {
+
+    font-weight: bold;
+
+}
 
 /*Most Popular hostings*/
 
-.most_popular {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+#most_popular {
+
 
 
 }
+
 
 .most_popular_title {
 
-    display: flex;
-    justify-content: space-between;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 
 }
 
-.most_popular_card {
-
-    height: 140px;
-
-}
 
 .most_popular_card_link {
 
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  overflow: auto;
-  background-color: white;
-  border-radius: 20px;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
 
 }
 
@@ -394,6 +416,7 @@ input {
 
 .footer_columns_column {
 
+    margin: 0%;
     width: 30%;
     padding: 32px 32px;
 
