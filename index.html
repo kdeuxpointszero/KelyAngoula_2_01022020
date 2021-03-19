@@ -13,34 +13,40 @@
         <div id="bloc_page">
 <!--Logo et intro-->
             <header>
-                <div id="header">
+                <div id="nav_bar">
                     <div id="logo">
-                        <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/>
-                    </div>    
-                    <nav id="navbar">
-                        <ul>
-                            <li><a class="nav_link" href="#hosting">Hébergements</a></li>
-                            <li><a class="nav_link" href="#activities">Activités</a></li>       
-                            <li><a class="sing_up" href="#">S'inscrire</a></li>
-                        </ul>
-                    </nav>         
+                        <a href="index.html"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/></a>
+                    </div>
+                    <div id="menu">   
+                        <nav>
+                            <ul>
+                                <li><a class="nav_link" href="#hosting">Hébergements</a></li>
+                                <li><a class="nav_link" href="#activities">Activités</a></li>       
+                            </ul>
+                        </nav>
+                        <div class="sign_up">
+                            <a class="sign_up_link" href="#">S'inscrire</a>
+                        </div>
+                    </div>             
                 </div>
             </header>
-
-            <div class="description">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
+            <div id="intro">
+                <div id="description">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
 <!--Barre de recherche-->
-            <div id="search_bar">
-                <form class="search_form" method="POST" action="traitement.php">
-                    <i class="fas fa-map-marker-alt search_icon"></i>
-                    <input type="search" id="city" placeholder="Marseille, France">
-                    <button type="submit" class="search_form_button">
-                        Rechercher
-                    </button>    
-                </form>
-            </div>    
+                <div id="search_bar">
+                    <form class="search_form" method="POST" action="traitement.php">
+                        <i class="fas fa-map-marker-alt marker_icon"></i>
+                        <input type="search" id="city" placeholder="Marseille, France">
+                        <button type="submit" class="search_form_button">
+                            Rechercher
+                        </button>
+                        <span class="search_icon"><i class="fas fa-search"></i></span>    
+                    </form>
+                </div>
+            </div>        
 <!--Filtres de recherches-->
             <div id="search_filters">
                 <h3 class="search_filters_title">Filtres</h3>
@@ -80,7 +86,7 @@
                     <header class="hosting_header">
                         <h2 class="hosting_title">Hébergements à Marseille</h2>
                     </header>
-                        <div id="hosting_block">
+                    <div id="hosting_block">
                     <div class="hosting_card">
                         <a href="#">
                             <figure class="hosting_card_choice">
