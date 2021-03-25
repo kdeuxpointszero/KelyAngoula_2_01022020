@@ -10,29 +10,30 @@
     </head>
 
     <body>
-        <div id="bloc_page">
 <!--Logo et intro-->
-            <header>
-                <div id="nav_bar">
-                    <div id="logo">
-                        <a href="index.html"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/></a>
-                    </div>
-                    <div id="menu">   
-                        <nav>
-                            <ul>
-                                <li><a class="nav_link" href="#hosting">Hébergements</a></li>
-                                <li><a class="nav_link" href="#activities">Activités</a></li>       
-                            </ul>
-                        </nav>
-                        <div class="sign_up">
-                            <a class="sign_up_link" href="#">S'inscrire</a>
-                        </div>
-                    </div>             
+        <header id="header">
+            <div id="nav_bar">
+                <div id="logo">
+                    <h1 class="logo_txt"><a href="index.html"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia"/></a>
                 </div>
-            </header>
+                <div id="menu">   
+                    <nav>
+                        <ul>
+                            <li><a class="nav_link" href="#hostings">Hébergements</a></li>
+                            <li><a class="nav_link" href="#activities">Activités</a></li>       
+                        </ul>
+                    </nav>
+                    <div class="sign_up">
+                        <span><a href="#">S'inscrire</a></span>
+                    </div>
+                </div>    
+            </div>             
+        </header>
+<!--Phrases d'introduction-->        
+        <main id="main_container">
             <div id="intro">
                 <div id="description">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h1 class="catch_phrase">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
 <!--Barre de recherche-->
@@ -87,104 +88,106 @@
                         <h2 class="hosting_title">Hébergements à Marseille</h2>
                     </header>
                     <div id="hosting_block">
-                    <div class="hosting_card">
-                        <a href="#">
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/cannebiere_hostel_small.jpg" alt="Chambre d'auberge avec lit surperposé">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Auberge la Cannebière</h3>
-                                    <p>Nuit à partir de <span class="price">25€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star grey"></span>
-                                </figcaption>
-                            </figure>
-                        </a>
+                        <div class="hosting_card">
+                            <a href="#">
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/cannebiere_hostel_small.jpg" alt="Chambre d'auberge avec lit surperposé">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Auberge la Cannebière</h3>
+                                        <p>Nuit à partir de <span class="price">25€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star grey"></span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>    
+                        <div class="hosting_card">
+                            <a href="#">  
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/harbor_hotel_small.jpg" alt="Chambre d'hôtel avec deux lis simples et une grande fenêtre">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Hôtel du port</h3>
+                                        <p> Nuit à partir de <span class="price">55€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </figcaption>
+                                </figure>          
+                            </a>
+                        </div>    
+                        <div class="hosting_card">
+                            <a href="#">    
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/seagulls_hotel_small.jpg" alt="Chambre d'hôtel composée de deux lits simple et d'un dressing">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Hôtel Les Mouettes</h3>
+                                        <p>Nuit à partir de <span class="price">76€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star grey"></span>
+                                    </figcaption>
+                                </figure>  
+                            </a>
+                        </div>
+                        <div class="hosting_card">
+                            <a href="#">    
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/sea_hotel_small.jpg" alt="Chambre d'hôtel avec lit double, tables de chevet et sofa">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Hôtel de la mer</h3>
+                                        <p>Nuit à partir de <span class="price">46€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star grey"></span>
+                                        <span class="fas fa-star grey"></span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="hosting_card">
+                            <a href="#">    
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/basket_hostel_small.jpg" alt="Dortoir rustique avec lit superposés">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Auberge le panier</h3>
+                                        <p>Nuit à partir de <span class="price">23€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star grey"></span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="hosting_card">
+                            <a href="#">
+                                <figure class="hosting_card_choice">
+                                    <img class="hosting_card_choice_img" src="images/hosting/4_small/aminas_hotel_small.jpg" alt="Chambre d'hôtel composée de deux lit doubles et d'un bureau">
+                                    <figcaption class="hosting_card_choice_info">
+                                        <h3 class="hosting_card_choice_title">Hôtel chez Amina</h3>
+                                        <p>Nuit à partir de <span class="price">96€</span></p>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>    
-                    <div class="hosting_card">
-                        <a href="#">  
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/harbor_hotel_small.jpg" alt="Chambre d'hôtel avec deux lis simples et une grande fenêtre">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Hôtel du port</h3>
-                                    <p> Nuit à partir de <span class="price">55€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                </figcaption>
-                            </figure>          
-                        </a>
-                    </div>    
-                    <div class="hosting_card">
-                        <a href="#">    
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/seagulls_hotel_small.jpg" alt="Chambre d'hôtel composée de deux lits simple et d'un dressing">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Hôtel Les Mouettes</h3>
-                                    <p>Nuit à partir de <span class="price">76€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star grey"></span>
-                                </figcaption>
-                            </figure>  
-                        </a>
-                    </div>
-                    <div class="hosting_card">
-                        <a href="#">    
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/sea_hotel_small.jpg" alt="Chambre d'hôtel avec lit double, tables de chevet et sofa">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Hôtel de la mer</h3>
-                                    <p>Nuit à partir de <span class="price">46€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star grey"></span>
-                                    <span class="fas fa-star grey"></span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="hosting_card">
-                        <a href="#">    
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/basket_hostel_small.jpg" alt="Dortoir rustique avec lit superposés">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Auberge le panier</h3>
-                                    <p>Nuit à partir de <span class="price">23€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star grey"></span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="hosting_card">
-                        <a href="#">
-                            <figure class="hosting_card_choice">
-                                <img class="hosting_card_choice_img" src="images/hosting/4_small/aminas_hotel_small.jpg" alt="Chambre d'hôtel composée de deux lit doubles et d'un bureau">
-                                <figcaption class="hosting_card_choice_info">
-                                    <h3 class="hosting_card_choice_title">Hôtel chez Amina</h3>
-                                    <p>Nuit à partir de <span class="price">96€</span></p>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>          
-                </div>
-                    <h3><a class="view_more" href="#">Afficher plus</a></h3>   
+                    <div class="view_more">     
+                    <h3><a href="#">Afficher plus</a></h3>
+                    </div>  
                 </section>   
 <!--Hébergements les plus populaires-->
                 <aside id="most_popular" class="most_popular">
@@ -316,34 +319,28 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
  <!--Fin du #bloc_page-->                      
  <!--Pied de page-->
-        <footer id="footer">
-            <div class="footer_columns">
-                <div class="footer_columns_column">
-                    <h3 class="footer_title">A propos</h3>
-                    <ul>
-                        <li><a class="footer_link" href="#">Fontionnement du site</a></li>
-                        <li><a class="footer_link" href="#">Condition générale de vente</a></li>
-                        <li><a class="footer_link" href="#">Données et confidentialité</a></li>
-                    </ul>
+        <footer>
+            <div id="footer">
+                <div class="footer">
+                    <h4> A propos </h4>
+                    <a href=""> Fonctionnement du site </a>
+                    <a href=""> Conditions générales de vente </a>
+                    <a href=""> Données et confidentialité </a>
                 </div>
-                <div class="footer_columns_column">
-                    <h3 class="footer_title">Nos hébergements</h3>
-                    <ul>
-                        <li><a class="footer_link" href="#">Charte qualité</a></li>
-                        <li><a class="footer_link" href="#">Soumettre votre hôtel</a></li>
-                    </ul>
+                <div class="footer">
+                    <h4> Nos hébergements </h4>
+                    <a href=""> Charte qualité </a>
+                    <a href=""> Soumettre votre hôtel </a>
                 </div>
-                <div class="footer_columns_column">
-                    <h3 class="footer_title">Assistance</h3>
-                    <ul>
-                        <li><a class="footer_link" href="#">Centre d'aide</a></li>
-                        <li><a class="footer_link" href="#">Nous contacter</a></li>
-                    </ul>
+                <div class="footer">
+                    <h4> Assistance </h4>
+                    <a href=""> Centre d'aide </a>
+                    <a href=""> Nous contacter </a>
                 </div>
-            </div>    
-        </footer>
+            </div>
+        </footer>        
     </body>
 </html>
